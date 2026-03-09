@@ -1,0 +1,208 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: 
+    linear-gradient(135deg,#1e3c72,#2a5298);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    font-size: 18px;
+    @media (max-width: 769px) {
+        font-size: 16px;
+    }@media (max-width: 480px) {
+        font-size: 14px;
+    }
+    .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: 40px auto;
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar {
+    width: 300px;
+    background: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar .photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid lab(95.02% 1.01 0.34);
+    margin-bottom: 15px;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.sidebar h1 span {
+    display: block;
+    font-weight: normal;
+    color: #00bcd4;
+}
+
+.sidebar .job {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #00bcd4;
+}
+
+.sidebar section {
+    margin-bottom: 20px;
+}
+
+.sidebar section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #00bcd4;
+}
+
+.sidebar section p,
+.sidebar section li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.sidebar section ul {
+    list-style: none;
+}
+
+.sidebar a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.content {
+    flex: 1;
+    padding: 40px;
+    background: #fff;
+}
+
+.content section {
+    margin-bottom: 30px;
+}
+
+.content h2 {
+    color: #1da1f2;
+    border-bottom: 2px solid #1da1f2;
+    padding-bottom: 5px;
+}
+
+.job-entry {
+    margin-bottom: 20px;
+}
+
+.job-entry .dates {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.job-entry .role {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.competences .bars {
+    list-style: none;
+}
+
+.competences .bars li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 110px;
+}
+
+.competences .bars li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 100px;
+    height: 10px;
+    background: #00bcd4;
+}
+    .job-entry:hover,
+    .competences .bars li:hover{
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+.left{
+    width: 300px;
+}
+.right{
+    flex: 1;
+    padding: 30px;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+    .content {
+        padding: 20px;
+    }
+}
+.bar {
+    background: #ddd;
+    height: 8px;
+    border-radius: 5px;
+}
+
+.progress {
+    height: 8%;
+    background: #1da1f2;
+    border-radius: 5px;
+}
+
+.html{
+    width: 80%;
+}
+.js{
+    width: 60%;
+}
+.container:hover {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.title {
+    font-size: 28px;
+    color: #1da1f2;
+    animation: glow 2s infinite alternate;
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #1da1f2;
+    }
+    to {
+        text-shadow: 0 0 20px #050505;
+    }
+}
